@@ -419,3 +419,13 @@ function squareDance(men, women) {
 }
 
 // console.log(squareDance(menQueue, womenQueue))
+
+// 10. The Ophidian Bank
+
+function bank(queue) {
+  let nextCustomer = queue.dequeue()
+
+  if (Math.random() <= .25) {
+    queue.enqueue(nextCustomer)
+  }
+}
